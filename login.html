@@ -1,15 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <form action="">
-        <h1 class="titulo">Iniciar Secion</h1>
-    </form>
+    <div class="formulario">
+        <form action="#" method="post" id="login" class="formu">
+            <h1 class="titulo">Iniciar sesión</h1>
+
+            <label class="correo" for="correo">Correo electronico</label>
+            <input class="contenedor" type="email" id="correo" name="correo" placeholder="Correo electronico" required>
+            <br>
+            <label class="contrasena" for="contrasena">Contraseña</label>
+            <input class="contenedor" type="password" id="contrasena" name="contrasena" placeholder="Contraseña"
+                required minlength="3">
+            <br>
+            <button class="botonlogin" type="submit">Autenticarse</button>
+        </form>
+    </div>
+    <script src="/js/login.js"></script>
 </body>
-<script src="js/myscript.js"></script>
 </html>
